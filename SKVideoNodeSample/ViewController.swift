@@ -32,6 +32,12 @@ class ViewController: UIViewController {
         player = AVPlayer(playerItem: playerItem)
         
         videoNode = SKVideoNode(AVPlayer: player)
+        
+        // initialize with NSURL
+//        videoNode = SKVideoNode(videoURL: url!)
+        
+        // initialize with VideoFileName
+//        videoNode = SKVideoNode(videoFileNamed: "sample.mp4")
         videoNode?.position = CGPointMake(scene.size.width/2, scene.size.height/2)
         
         scene.addChild(videoNode!)
